@@ -7,7 +7,8 @@ import { ZeptoMainComponent } from './zepto-main/zepto-main.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { LoginComponent } from './component/login/login.component';
 import { MycartComponent } from './component/mycart/mycart.component';
-import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { DashboardComponent } from './common/components/dashboard/dashboard.component';
+
 
 @NgModule({
   declarations: [
