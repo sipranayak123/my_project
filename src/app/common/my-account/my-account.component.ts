@@ -1,5 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material';
+
 import { NavbarComponent } from 'src/app/component/navbar/navbar.component';
 
 @Component({
@@ -9,8 +9,8 @@ import { NavbarComponent } from 'src/app/component/navbar/navbar.component';
 })
 export class MyAccountComponent implements OnInit {
 
-  constructor(public matdialog:MatDialogRef<MyAccountComponent>,
-    @Inject(MAT_DIALOG_DATA) public dialog: any) { }
+  constructor(
+   ) { }
 
   ngOnInit(): void {
   }

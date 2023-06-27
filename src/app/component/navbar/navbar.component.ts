@@ -2,6 +2,7 @@ import { Component, DoCheck, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import {MatDialogConfig, MatDialog} from '@angular/material/dialog';
 import { MyAccountComponent } from 'src/app/common/my-account/my-account.component';
+import { LoginComponent } from '../login/login.component';
 
 
 @Component({
@@ -25,13 +26,9 @@ isLoggedin:any ='false'
   }
   onLoginClick(){
    
-this.router.navigateByUrl('/login')
+    this.dialog.open(LoginComponent);
   }
   onMyaccount(){
-    // const dialogConfig = new MatDialogConfig();
-    // dialogConfig.disableClose = true;
-    // dialogConfig.autoFocus =true;
-    // dialogConfig.width ="100%"
-this.dialog.open(MyAccountComponent);
+   this.router.navigateByUrl('/my_account') 
   }
 }
